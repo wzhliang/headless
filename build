@@ -1,0 +1,4 @@
+CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o headless .
+docker build --no-cache -t registry.cn-hangzhou.aliyuncs.com/wise2c-dev/headless:v1 .
+
+docker push registry.cn-hangzhou.aliyuncs.com/wise2c-dev/headless:v1
